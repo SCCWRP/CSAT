@@ -1,1 +1,77 @@
-CSAT
+---
+output:
+  html_document:
+    keep_md: yes
+    toc: no
+    self_contained: no
+---
+
+## CSAT
+
+#### Maintainer: *Marcus W. Beck, marcusb@sccwrp.org*
+
+The California Stream Assessment Toolbox is a combined package for the [CSCI](https://github.com/SCCWRP/CSCI) (California Stream Condition Index), [ASCI](https://github.com/SCCWRP/ASCI) (Algal Stream Condition Index), and [PHAB](https://github.com/SCCWRP/PHAB) (Physical Habitat index) packages.  The functionality of each index is the same in CSAT as in the original packages.  This package exists solely as a convenience for installation. 
+
+## Installation
+
+Install the package as follows:
+
+```{r, eval = FALSE}
+install.packages('devtools')
+library(devtools)
+install_github('SCCWRP/CSAT')
+library(CSAT)
+```
+
+## Usage
+
+`library(CSAT)` will load the core CSAT packages:
+
+* [CSCI](https://github.com/SCCWRP/CSCI), California Stream Condition Index. 
+* [ASCI](https://github.com/SCCWRP/ASCI), Algal Stream Condition Index.
+* [PHAB](https://github.com/SCCWRP/PHAB), for Physical Habitat index.
+
+You will receive startup messages indicating the pacckages are being loaded:
+
+```{r example}
+library(CSAT)
+```
+
+### CSCI
+
+```{r}
+data(bugs_stations)
+results <- CSCI(bugs = bugs_stations[[1]], stations = bugs_stations[[2]])
+ls(results)
+```
+
+### ASCI
+
+```{r}
+data(demo_algae_tax)
+data(demo_algae_sitedata)
+demo_results <- ASCI(taxain = demo_algae_tax, sitein = demo_algae_sitedata)
+demo_results
+scores(demo_results)
+```
+
+### PHAB
+
+```{r}
+data(stations)
+data(phab)
+IPI(stations = stations, phab = phab)
+```
+
+## Updates
+
+And you can check that all CSAT packages are up-to-date with `CSAT_update()`:
+
+```{r update, eval = FALSE}
+CSAT_update()
+```
+
+## Attribution
+
+This package pillaged code from [tidyverse](https://github.com/tidyverse/tidyverse).
+
