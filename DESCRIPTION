@@ -20,6 +20,10 @@ Imports:
     tibble (>= 1.3.4)
 Depends:
     R (>= 3.4.1)
+Remotes:
+  SCCWRP/CSCI,
+  SCCWRP/ASCI,
+  SCCWRP/PHAB
 Authors@R: c(
   person(given = "Marcus W.", family = "Beck",
     role = c("aut","cre"),
