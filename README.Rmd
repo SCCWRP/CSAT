@@ -31,7 +31,7 @@ library(CSAT)
 * [ASCI](https://github.com/SCCWRP/ASCI), Algal Stream Condition Index.
 * [PHAB](https://github.com/SCCWRP/PHAB), for Physical Habitat index.
 
-You will receive startup messages indicating the pacckages are being loaded:
+You will receive startup messages indicating the packages are being loaded:
 
 ```{r example}
 library(CSAT)

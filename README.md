@@ -1,11 +1,3 @@
----
-output:
-  html_document:
-    keep_md: yes
-    toc: no
-    self_contained: no
----
-
 ## CSAT
 
 #### Maintainer: *Marcus W. Beck, marcusb@sccwrp.org*
@@ -32,7 +24,7 @@ library(CSAT)
 * [ASCI](https://github.com/SCCWRP/ASCI), Algal Stream Condition Index.
 * [PHAB](https://github.com/SCCWRP/PHAB), for Physical Habitat index.
 
-You will receive startup messages indicating the pacckages are being loaded:
+You will receive startup messages indicating the packages are being loaded:
 
 
 ```r
@@ -86,18 +78,18 @@ scores(demo_results)
 ## # A tibble: 12 x 8
 ##    taxa    SampleID              MMI MMI_Perc~     O     E Oove~ OoverE_P~
 ##  * <chr>   <chr>               <dbl>     <dbl> <dbl> <dbl> <dbl>     <dbl>
-##  1 diatoms 000CAT148_8/10/10_1 0.813    0.898   8.00  6.67 1.20      0.676
-##  2 diatoms 102PS0139_8/9/10_1  0.740    0.254   8.00  7.05 1.13      0.310
-##  3 diatoms 105DLCDCC_5/19/09_1 0.777    0.622   8.00  6.41 1.25      0.874
-##  4 diatoms 105DLCDCC_6/23/09_1 0.731    0.179   7.00  6.41 1.09      0.134
-##  5 hybrid  000CAT148_8/10/10_1 0.691    0.917   9.00  9.64 0.934     0.200
-##  6 hybrid  102PS0139_8/9/10_1  0.540    0.202  10.0  10.3  0.966     0.290
-##  7 hybrid  105DLCDCC_5/19/09_1 0.554    0.268   9.00  8.76 1.03      0.494
-##  8 hybrid  105DLCDCC_6/23/09_1 0.601    0.528  10.0   8.41 1.19      0.921
-##  9 sba     000CAT148_8/10/10_1 0.733    0.701   1.00  2.33 0.429     0.106
-## 10 sba     102PS0139_8/9/10_1  0.636    0.466   2.00  2.82 0.709     0.760
-## 11 sba     105DLCDCC_5/19/09_1 0.435    0.0860  3.00  5.39 0.556     0.360
-## 12 sba     105DLCDCC_6/23/09_1 0.795    0.822   4.00  5.43 0.737     0.816
+##  1 diatoms 000CAT148_8/10/10_1 0.813    0.906   8.00  6.67 1.20     0.445 
+##  2 diatoms 102PS0139_8/9/10_1  0.753    0.346   8.00  7.05 1.13     0.0866
+##  3 diatoms 105DLCDCC_5/19/09_1 0.772    0.552   8.00  6.41 1.25     0.773 
+##  4 diatoms 105DLCDCC_6/23/09_1 0.731    0.147   8.00  6.41 1.25     0.773 
+##  5 hybrid  000CAT148_8/10/10_1 0.691    0.917   9.00  9.64 0.934    0.200 
+##  6 hybrid  102PS0139_8/9/10_1  0.540    0.202  10.0  10.3  0.966    0.290 
+##  7 hybrid  105DLCDCC_5/19/09_1 0.554    0.268   9.00  8.76 1.03     0.494 
+##  8 hybrid  105DLCDCC_6/23/09_1 0.601    0.528  10.0   8.41 1.19     0.921 
+##  9 sba     000CAT148_8/10/10_1 0.733    0.701   1.00  2.33 0.429    0.106 
+## 10 sba     102PS0139_8/9/10_1  0.636    0.466   2.00  2.82 0.709    0.760 
+## 11 sba     105DLCDCC_5/19/09_1 0.435    0.0860  3.00  5.39 0.556    0.360 
+## 12 sba     105DLCDCC_6/23/09_1 0.795    0.822   4.00  5.43 0.737    0.816
 ```
 
 ### PHAB
