@@ -63,14 +63,6 @@ data(phab)
 IPI(stations = stations, phab = phab)
 ```
 
-## Updates
-
-And you can check that all CSAT packages are up-to-date with `CSAT_update()`:
-
-```{r update, eval = FALSE}
-CSAT_update()
-```
-
 ## Attribution
 
 This package pillaged code from [tidyverse](https://github.com/tidyverse/tidyverse).

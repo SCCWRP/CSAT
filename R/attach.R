@@ -1,4 +1,4 @@
-core <- c("ASCI", "CSCI", "PHAB")
+core <- c("CSCI", "ASCI", "PHAB")
 
 core_loaded <- function() {
   search <- paste0("package:", core)
